@@ -1,0 +1,191 @@
+.download-app {
+  width: 320px;
+  margin: 0 auto;
+  padding: 426px 0 28px 0;
+  color: $light-color;
+  background-color: rgb(29, 38, 49);
+  text-align: center;
+  background-image:
+    url("../../img/iphone-hand-mobile@1x.png"),
+    url("../../img/bg-back-mobile@1x.jpg");
+  background-position:
+    0 112px,
+    center 0;
+  background-repeat: no-repeat;
+  background-size:
+    auto 286px,
+    auto 398px;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image:
+      url("../../img/iphone-hand-mobile@2x.png"),
+      url("../../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+.download-app__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.download-app__download-button {
+  color: $light-color;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  margin: 0 auto;
+  padding: 15px 27px 16px 32px;
+  border: 3px solid $light-color;
+  border-radius: 30px;
+}
+
+.download-app__download-button:hover {
+  background-color: $light-color;
+  color: $bright-pink;
+}
+
+.download-app__download-button:active {
+  background-color: $light-color;
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.download-app__platforms {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.download-app__invocation {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 90px 0 107px 0;
+    color: $light-color;
+    background-color: rgb(29, 38, 49);
+    text-align: center;
+    background-image:
+      url("../../img/iphone-hand-tablet@1x.png"),
+      url("../../img/bg-back-tablet@1x.jpg");
+    background-position:
+      -20px 75px,
+      center -110px;
+    background-repeat: no-repeat;
+    background-size:
+      705px auto,
+      auto 729px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image:
+        url("../../img/iphone-hand-tablet@2x.png"),
+        url("../../img/bg-back-tablet@2x.jpg");
+    }
+  }
+
+  .download-app__download-button {
+    padding: 13px 37px 18px 39px;
+  }
+
+  .download-app__body {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download-app__container {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .download-app__invocation {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 5px;
+    margin-bottom: 26px;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: lighter;
+    color: $light-color;
+  }
+
+  .download-app__platforms {
+    display: block;
+    width: 310px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app {
+    width: $desktop-width;
+    padding: 210px 0 124px 0;
+    z-index: 100;
+    background-image:
+      url("../../img/iphone-hand-desktop@1x.png"),
+      url("../../img/bg-back-desktop@1x.jpg");
+    background-position:
+      145px bottom,
+      center 0;
+    background-repeat: no-repeat;
+    background-size:
+      1050px auto,
+      auto 853px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image:
+        url("../../img/iphone-hand-desktop@2x.png"),
+        url("../../img/bg-back-desktop@2x.jpg");
+    }
+  }
+
+  .download-app__container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .download-app__invocation {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: lighter;
+    color: $light-color;
+  }
+
+  .download-app__download-button {
+    color: $light-color;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    line-height: 18px;
+    font-weight: 900;
+    margin: 0 auto;
+    padding: 14px 52px 17px 26px;
+    border: 3px solid $light-color;
+    border-radius: 30px;
+  }
+}

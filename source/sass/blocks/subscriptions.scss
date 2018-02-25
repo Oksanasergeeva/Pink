@@ -1,0 +1,52 @@
+.subscriptions {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 93px 0 14px 0;
+  background-color: rgb(242, 242, 242);
+  overflow: hidden;
+}
+
+.subscriptions__packages {
+  width: 820px;
+  margin-left: -250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+@media (min-width: $tablet-width) {
+  .subscriptions {
+    width: $tablet-width;
+    padding: 88px 0 73px 0;
+  }
+
+  .subscriptions__packages {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .subscriptions__slider {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscriptions {
+    width: $desktop-width;
+    padding: 148px 0 103px 0;
+  }
+
+  .subscriptions__packages {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+}

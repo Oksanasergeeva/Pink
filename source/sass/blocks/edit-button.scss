@@ -1,0 +1,75 @@
+.edit-button {
+  border: 0;
+  background-color: inherit;
+  margin: auto;
+}
+
+.edit-button__button {
+  outline: none;
+}
+
+.edit-button__button:hover {
+  fill: rgb(141, 148, 155);
+}
+
+.edit-button__button--contrast:hover path {
+  fill: rgb(141, 148, 155);
+}
+
+@media (max-width: 559px) {
+  .edit-button__button--active {
+    fill: $bright-pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .edit-button {
+    border: 0;
+    margin: 0;
+    background-color: inherit;
+  }
+
+  .edit-button__button--crop {
+    width: 22px;
+    height: 22px;
+    fill: $bright-pink;
+  }
+
+  .edit-button__button--fill {
+    width: 24px;
+    height: 22px;
+    fill: $bright-pink;
+  }
+
+  .edit-button__button--contrast {
+    width: 16px;
+    height: 16px;
+  }
+
+  .edit-button__button--contrast path {
+    fill: $bright-pink;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .edit-button__button--crop {
+    width: 44px;
+    height: 44px;
+    fill: $bright-pink;
+  }
+
+  .edit-button__button--fill {
+    width: 48px;
+    height: 43px;
+    fill: $bright-pink;
+  }
+
+  .edit-button__button--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .edit-button__button--contrast path {
+    fill: $bright-pink;
+  }
+}

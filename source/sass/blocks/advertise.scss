@@ -1,0 +1,110 @@
+.advertise {
+  width: $mobile-width;
+  position: relative;
+  margin: 0 auto;
+  padding: 38px 0 30px 0;
+  color: rgb(40, 54, 69);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 100;
+  text-align: center;
+  background-color: $light-color;
+}
+
+.advertise::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 32px 320px 0 0;
+  border-color: $light-color transparent transparent transparent;
+}
+
+.advertise__text {
+  width: 210px;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.advertise__text:first-of-type {
+  padding-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .advertise {
+    width: $tablet-width;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 49px;
+    padding-bottom: 45px;
+    color: rgb(40, 54, 69);
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: 100;
+    text-align: center;
+    background-color: $light-color;
+    z-index: 3;
+  }
+
+  .advertise::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -51px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 51px $tablet-width 0 0;
+    border-color: $light-color transparent transparent transparent;
+  }
+
+  .advertise__text:first-of-type {
+    padding-bottom: 0;
+    display: inline-block;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .advertise__text:last-of-type {
+    display: inline-block;
+    width: 340px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advertise {
+    width: $desktop-width;
+    padding: 64px 0 80px 0;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 100;
+    text-align: center;
+  }
+
+  .advertise__text:first-child {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .advertise__text:last-child {
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .advertise::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -95px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 95px $desktop-width 0 0;
+    border-color: $light-color transparent transparent transparent;
+  }
+}

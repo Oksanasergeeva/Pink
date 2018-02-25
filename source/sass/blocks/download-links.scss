@@ -1,0 +1,30 @@
+.download-links {
+  list-style: none;
+  width: 205px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 33px 0 17px 0;
+  margin: 0 auto;
+}
+
+.download-links__item {
+  width: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .download-links {
+    padding: 44px 0 35px 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-links {
+    padding: 63px 0 53px 0;
+    margin: 0 auto;
+  }
+}

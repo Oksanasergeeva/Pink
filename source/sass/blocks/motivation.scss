@@ -1,0 +1,58 @@
+.motivation {
+  width: $mobile-width;
+  background-color: $light-color;
+  margin: 0 auto;
+  padding: 21px 0 44px 0;
+  text-align: center;
+}
+
+.motivation__text {
+  display: inline-block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: rdb(40, 54, 69);
+}
+
+@media (min-width: $tablet-width) {
+  .motivation {
+    width: $tablet-width;
+    background-color: $light-color;
+    margin: 0 auto;
+    padding: 40px 0 68px 0;
+    text-align: center;
+  }
+
+  .motivation__text {
+    display: inline-block;
+    width: 450px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: lighter;
+    color: rdb(40, 54, 69);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motivation {
+    width: $desktop-width;
+    background-color: $light-color;
+    margin: 0 auto;
+    padding: 2px 0 65px 0;
+    text-align: center;
+  }
+
+  .motivation__text {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: lighter;
+    color: rdb(40, 54, 69);
+  }
+}

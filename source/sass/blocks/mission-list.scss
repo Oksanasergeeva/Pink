@@ -1,0 +1,81 @@
+.mission-list {
+  width: 266px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.mission-list__item {
+  text-align: center;
+  width: 266px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.mission-list__item-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin: 19px auto 13px auto;
+}
+
+.mission-list__item-description {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
+  color: rgb(40, 54, 69);
+}
+
+@media (min-width: $tablet-width) {
+  .mission-list {
+    width: 310px;
+    margin: 0;
+    padding: 8px 0 0 0;
+  }
+
+  .mission-list__item {
+    text-align: left;
+    width: 300px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .mission-list {
+    width: 945px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  .mission-list__item {
+    width: 245px;
+    text-align: center;
+  }
+
+  .mission-list__item:last-of-type {
+    width: 222px;
+    text-align: center;
+  }
+
+  .mission-list__item-title {
+    font-size: 30px;
+    margin-bottom: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+  }
+
+  .mission-list__item-description {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 100;
+    color: rgb(40, 54, 69);
+  }
+}

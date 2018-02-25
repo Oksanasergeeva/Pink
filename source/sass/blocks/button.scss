@@ -1,0 +1,77 @@
+.button {
+  display: block;
+  padding: 11px 25px 10px 35px;
+  width: 214px;
+}
+
+.button—-bordered-brand,
+.button-—bordered-gray {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  margin: 12px auto;
+  width: 275px;
+  padding: 17px 23px 16px 30px;
+  border-radius: 30px;
+  background-color: inherit;
+  outline: inherit;
+}
+
+.button—-bordered-brand {
+  color: $bright-pink;
+  border: 3px solid $bright-pink;
+  margin-bottom: 12px;
+}
+
+.button—-bordered-brand:hover {
+  cursor: pointer;
+  color: $light-color;
+  background-color: $bright-pink;
+  border: 3px solid $bright-pink;
+}
+
+.button—-bordered-brand:active {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.3);
+  background-color: $bright-pink;
+  border: 3px solid $bright-pink;
+}
+
+.button-—bordered-gray {
+  color: rgba(121, 129, 138, 0.1);
+  border: 3px solid rgba(121, 129, 138, 0.1);
+}
+
+.button-—bordered-gray:hover {
+  color: rgba(121, 129, 138, 0.3);
+  border: 3px solid rgba(121, 129, 138, 0.3);
+}
+
+.button-—bordered-gray:active {
+  color: rgba(255, 255, 255, 0.3);
+  border: 3px solid rgba(181, 185, 190, 1);
+  background-color: rgba(181, 185, 190, 1);
+}
+
+@media (min-width: $tablet-width) {
+  .button—-bordered-brand,
+  .button-—bordered-gray {
+    width: 260px;
+    padding: 16px 30px 16px 45px;
+  }
+
+  .button—-bordered-brand {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button—-bordered-brand,
+  .button-—bordered-gray {
+    width: 180px;
+  }
+
+  .button—-bordered-brand {
+    margin-bottom: 25px;
+  }
+}

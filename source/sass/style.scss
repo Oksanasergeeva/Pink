@@ -1,0 +1,75 @@
+@import "helpers.scss";
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensansbold.woff2") format("woff2"),
+    url("../fonts/opensansbold.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+}
+
+body {
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+$light-color: rgb(255, 255, 255);
+$bright-pink: rgb(210, 50, 86);
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$gray-border: rgb(238, 238, 238);
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+@import "blocks/slider.scss";
+@import "blocks/button.scss";
+@import "blocks/main-header.scss";
+@import "blocks/site-list.scss";
+@import "blocks/download-app.scss";
+@import "blocks/page.scss";
+@import "blocks/download-links.scss";
+@import "blocks/advertise.scss";
+@import "blocks/about-app.scss";
+@import "blocks/mission-list.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/slider-button.scss";
+@import "blocks/subscriptions.scss";
+@import "blocks/subscriptions-package.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/address.scss";
+@import "blocks/map.scss";
+@import "blocks/title.scss";
+@import "blocks/see-photos.scss";
+@import "blocks/post.scss";
+@import "blocks/photos.scss";
+@import "blocks/motivation.scss";
+@import "blocks/photoeditor.scss";
+@import "blocks/edit-button.scss";
+@import "blocks/post-photo.scss";
+@import "blocks/social-icons-list.scss";
+@import "blocks/copyright.scss";
+@import "blocks/competition-condition.scss";
+@import "blocks/competition-form.scss";
+@import "blocks/form-error.scss";
+@import "blocks/form-confirm.scss";
+@import "blocks/contacts-list.scss";
+@import "blocks/social-logo.scss";
+@import "blocks/advantage.scss";
+@import "blocks/main-navigation.scss";

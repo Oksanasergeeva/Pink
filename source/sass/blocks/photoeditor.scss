@@ -1,0 +1,144 @@
+.photoeditor {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(242, 242, 242);
+  padding: 20px 0 25px 0;
+}
+
+.photoeditor__container {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photoeditor__body {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.photoeditor__photo-example {
+  display: block;
+  margin: 0 auto;
+}
+
+.photoeditor__buttons {
+  width: 210px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 35px 0 29px 30px;
+  list-style: none;
+}
+
+.photoeditor__buttons-item {
+  width: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .photoeditor {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+    padding: 0 0 41px 0;
+  }
+
+  .photoeditor__container {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .photoeditor__body {
+    width: 270px;
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+  }
+
+  .photoeditor__photo-example {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    margin-top: 60px;
+  }
+
+  .photoeditor__buttons {
+    width: 50px;
+    height: 170px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    position: absolute;
+    left: -11px;
+    top: 44px;
+  }
+
+  .photoeditor__buttons-item {
+    height: 25px;
+    width: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photoeditor {
+    width: 940px;
+    margin: 0 auto;
+    background-color: rgb(242, 242, 242);
+    padding: 47px 0 51px 0;
+  }
+
+  .photoeditor__container {
+    width: 780px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .photoeditor__body {
+    width: 400px;
+    margin: 12px 0 0 0;
+    display: block;
+    position: relative;
+  }
+
+  .photoeditor__photo-example {
+    display: block;
+    margin: 0;
+    width: 300px;
+  }
+
+  .photoeditor__buttons {
+    width: 50px;
+    height: 177px;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: -5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .photoeditor__buttons-item {
+    width: 45px;
+  }
+}

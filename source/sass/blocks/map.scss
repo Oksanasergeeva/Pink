@@ -1,0 +1,101 @@
+.map {
+  display: block;
+  width: $mobile-width;
+  min-height: 199px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(254, 224, 112);
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: $mobile-width auto;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.map::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: $bright-pink;
+  border: 10px solid $light-color;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -20%);
+}
+
+.map__interactive {
+  display: block;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    display: block;
+    width: $tablet-width;
+    min-height: 374px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(254, 224, 112);
+    background-image: url("../../img/bg-map-tablet@1x.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: $tablet-width auto;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .map::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $bright-pink;
+    border: 10px solid $light-color;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, 20%);
+  }
+
+  .map__interactive {
+    width: $tablet-width;
+    height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    display: block;
+    width: $desktop-width;
+    min-height: 501px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgb(254, 224, 112);
+    background-image: url("../../img/bg-map-desktop@1x.png");
+    background-position: center -275px;
+    background-repeat: no-repeat;
+    background-size: $desktop-width auto;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  .map__interactive {
+    width: $desktop-width;
+    height: 501px;
+  }
+}

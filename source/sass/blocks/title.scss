@@ -1,0 +1,109 @@
+.title__text {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 100px 0 80px 0;
+  width: 250px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+  color: $light-color;
+}
+
+.title__text--form {
+  padding: 33px 0 51px 0;
+}
+
+.title__text--photo {
+  padding: 33px 0 81px 0;
+}
+
+.title {
+  width: $mobile-width;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(40, 54, 69);
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: auto 254px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .title__text {
+    display: inline-block;
+    width: 760px;
+    margin: 0 auto;
+    padding: 190px 0 135px 0;
+    font-size: 50px;
+    line-height: 65px;
+    font-weight: lighter;
+    color: $light-color;
+  }
+
+  .title__text--photo {
+    width: 370px;
+    padding: 72px 0 140px 0;
+    line-height: 60px;
+  }
+
+  .title__text--form {
+    line-height: 60px;
+    width: 500px;
+    padding: 72px 0 82px 0;
+  }
+
+  .title {
+    width: $tablet-width;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(40, 54, 69);
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: $tablet-width auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title__text {
+    display: inline-block;
+    margin: 0 auto;
+    padding-top: 190px;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: lighter;
+    color: $light-color;
+  }
+
+  .title__text--photo {
+    width: 370px;
+    padding: 170px 0 105px 0;
+  }
+
+  .title__text--form {
+    width: 760px;
+    padding: 174px 0 100px 0;
+  }
+
+  .title {
+    width: $desktop-width;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(40, 54, 69);
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: $desktop-width auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+    }
+  }
+}

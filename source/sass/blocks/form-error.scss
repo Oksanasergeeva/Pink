@@ -1,0 +1,126 @@
+.form-error {
+  width: $mobile-width;
+  margin: 0 auto;
+  background-color: $light-color;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 15px 0 rgba(50, 50, 50, 0.15);
+}
+
+.form-error__body {
+  margin: 0 auto;
+  width: 280px;
+  padding: 44px 0 55px 0;
+}
+
+.form-error__name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+
+.form-error__description {
+  width: 280px;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: rgb(40, 54, 69);
+  padding: 30px 0 40px 0;
+}
+
+.form-error__close {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  padding: 25px 125px 25px 125px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $light-color;
+  background-color: rgb(42, 171, 109);
+  text-transform: uppercase;
+}
+
+.form-error__close:hover {
+  background-color: rgb(28, 155, 84);
+  color: $light-color;
+}
+
+.form-error__close:active {
+  background-color: rgb(28, 155, 84);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.form-error__close:disabled {
+  background-color: rgb(229, 229, 229);
+  color: $light-color;
+}
+
+.form-error--opened {
+  display: block;
+}
+
+.form-error--close {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-error {
+    width: 460px;
+    margin: 0 auto;
+    background-color: $light-color;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+  }
+
+  .form-error__body {
+    margin: 0 auto;
+    width: 320px;
+    padding: 45px 0 50px 0;
+  }
+
+  .form-error__name {
+    width: 215px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+  }
+
+  .form-error__description {
+    width: 310px;
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: lighter;
+    color: rgb(40, 54, 69);
+    padding: 35px 0 40px 0;
+  }
+
+  .form-error__close {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    padding: 25px 130px 25px 130px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $light-color;
+    background-color: rgb(42, 171, 109);
+    text-transform: uppercase;
+  }
+}
